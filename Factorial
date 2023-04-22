@@ -1,6 +1,10 @@
 def fact(num):
     if num>0:
         return num*fact(num-1)
+    elif num<0:
+        return None
+    elif type(num) not int:
+        return None
     else:
         return 1
 num=int(input())
